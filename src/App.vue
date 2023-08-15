@@ -3,7 +3,7 @@
 
 <template>
   <div class="text-3xl font-bold underline">
-    Hello world!
+    Hello world! Mo the best
   </div>
 
 </template>
