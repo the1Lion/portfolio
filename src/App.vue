@@ -1,11 +1,13 @@
 <script setup>
+import Navigation from "./components/Navigation.vue";
 </script>
 
 <template>
-  <div class="text-3xl font-bold underline">
-    Hello world! Mo the best
-  </div>
+  <navigation/>
+  <div class="container mx-auto py-4">
+    <router-view/>
 
+  </div>
 </template>
 
 <style scoped>
