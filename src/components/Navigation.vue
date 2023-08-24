@@ -3,7 +3,7 @@ export default {
   name: "Navigation",
   data() {
     return {
-      showMenu: false,
+      showMenu: true,
     }
   }
 }
