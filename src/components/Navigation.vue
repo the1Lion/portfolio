@@ -31,10 +31,10 @@ export default {
     <Transition>
       <div v-show="showMenu" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
         <div class="text-xl lg:flex-grow">
-          <a href="/portfolio/" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+          <a href="/" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
             Home
           </a>
-          <a href="/portfolio/about" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+          <a href="/about" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
             About
           </a>
         </div>
