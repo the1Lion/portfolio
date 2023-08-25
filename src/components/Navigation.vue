@@ -10,7 +10,7 @@ export default {
 </script>
 
 <template>
-  <nav class="flex items-center justify-between flex-wrap bg-sky-500 p-6">
+  <nav class="flex items-center justify-between flex-wrap bg-[--color04] p-6">
     <div class="flex items-center flex-shrink-0 text-white mr-6">
       <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
         <path
