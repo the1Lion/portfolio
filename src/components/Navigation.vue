@@ -16,10 +16,7 @@ export default {
 <template>
   <nav class="flex items-center justify-between flex-wrap p-6">
     <div class="flex items-center flex-shrink-0 text-white mr-6">
-      <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
-        <path
-            d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/>
-      </svg>
+
       <span class="font-semibold text-2xl tracking-tight pl-3">Mohamad Katramez</span>
     </div>
     <div class="block lg:hidden">
@@ -35,10 +32,10 @@ export default {
     <Transition>
       <div v-show="showMenu" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
         <div class="text-xl lg:flex-grow">
-          <a href="/" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+          <a href="/" class="block px-2 py-1 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 rounded dark:bg-gradient-to-r dark:from-cyan-500 dark:to-blue-500 bg-gradient-to-r from-violet-500 to-fuchsia-500">
             Home
           </a>
-          <a href="/about" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+          <a href="/about" class="block lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
             About
           </a>
         </div>
