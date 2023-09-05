@@ -1,6 +1,10 @@
 <script>
+import DarkModeSwitcher from "./DarkModeSwitcher.vue";
+import DownloadPdfButton from "./DownloadPdfButton.vue";
+
 export default {
   name: "Navigation",
+  components: {DownloadPdfButton, DarkModeSwitcher},
   data() {
     return {
       showMenu: true,
@@ -10,7 +14,7 @@ export default {
 </script>
 
 <template>
-  <nav class="flex items-center justify-between flex-wrap bg-[--color04] p-6">
+  <nav class="flex items-center justify-between flex-wrap p-6">
     <div class="flex items-center flex-shrink-0 text-white mr-6">
       <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
         <path
@@ -38,9 +42,9 @@ export default {
             About
           </a>
         </div>
+        <DarkModeSwitcher/>
         <div>
-          <a href="#"
-             class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Lebenslauf</a>
+          <DownloadPdfButton pdf-file-name="MKatramez_CV.pdf" pdf-url="/MKatramez_CV.pdf"/>
         </div>
       </div>
     </Transition>
