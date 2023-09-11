@@ -2,10 +2,11 @@
 import Navigation from "../components/Navigation.vue";
 import Footer from "../components/Footer.vue";
 import ProfileInformation from "../components/Profile/ProfileInformation.vue";
+import AboutDescription from "../components/About/AboutDescription.vue";
 
 export default {
   name: "About",
-  components: {ProfileInformation, Footer, Navigation}
+  components: {AboutDescription, ProfileInformation, Footer, Navigation}
 }
 </script>
 
@@ -16,7 +17,14 @@ export default {
       <Navigation/>
       <transition appear :duration="550" name="fade">
         <div class="flex-grow container rounded-2xl px-12 py-12">
-          <ProfileInformation/>
+          <div class="flex flex-row gap-20">
+            <div>
+              <ProfileInformation/>
+            </div>
+            <div>
+              <AboutDescription/>
+            </div>
+          </div>
 
         </div>
       </transition>
