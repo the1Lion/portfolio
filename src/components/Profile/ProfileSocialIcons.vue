@@ -1,20 +1,13 @@
 <script>
-import * as constants from '../../helpers/constants.js';
-
 export default {
   name: "ProfileSocialIcons",
-  computed: {
-    constants() {
-      return constants
-    }
-  },
 }
 </script>
 
 <template>
   <div class="flex justify-between">
     <!-- Discord -->
-    <a :href=constants.DISCORD_LINK>
+    <a :href=$constants.DISCORD_LINK>
       <svg
           class="mr-2 cursor-pointer h-7 w-7"
           fill="currentColor"
@@ -29,7 +22,7 @@ export default {
     </a>
 
     <!-- Github -->
-    <a :href=constants.GITHUB_LINK>
+    <a :href=$constants.GITHUB_LINK>
       <svg
           xmlns="http://www.w3.org/2000/svg"
           class="mr-2 cursor-pointer h-7 w-7"
@@ -42,7 +35,7 @@ export default {
     </a>
 
     <!-- Facebook -->
-    <a :href=constants.FACEBOOK_LINK>
+    <a :href=$constants.FACEBOOK_LINK>
       <svg
           xmlns="http://www.w3.org/2000/svg"
           class="mr-2 cursor-pointer h-7 w-7"
@@ -55,7 +48,7 @@ export default {
     </a>
 
     <!-- Instagram -->
-    <a :href=constants.INSTEGRAM_LINK>
+    <a :href=$constants.INSTEGRAM_LINK>
       <svg
           xmlns="http://www.w3.org/2000/svg"
           class="mr-2 cursor-pointer h-7 w-7"
@@ -68,7 +61,7 @@ export default {
     </a>
 
     <!-- Linkedin -->
-    <a :href=constants.LINKED_IN_LINK>
+    <a :href=$constants.LINKED_IN_LINK>
       <svg
           xmlns="http://www.w3.org/2000/svg"
           class="mr-2 cursor-pointer h-7 w-7"
@@ -81,7 +74,7 @@ export default {
     </a>
 
     <!-- Whatsapp -->
-    <a :href=constants.WHATS_APP_LINK>
+    <a :href=$constants.WHATS_APP_LINK>
       <svg
           xmlns="http://www.w3.org/2000/svg"
           class="h-7 w-7 cursor-pointer"
