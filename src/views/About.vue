@@ -11,7 +11,7 @@ export default {
 
 <template>
   <div
-      class="bg-gradient-to-r from-cyan-500 to-blue-500 dark:bg-gradient-to-r dark:from-violet-500 dark:to-fuchsia-500">
+      class="overflow-auto bg-gradient-to-r from-cyan-500 to-blue-500 dark:bg-gradient-to-r dark:from-violet-500 dark:to-fuchsia-500">
     <div class="container mx-auto flex flex-col h-screen">
       <Navigation/>
       <transition appear :duration="550" name="fade">

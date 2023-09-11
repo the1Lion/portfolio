@@ -86,7 +86,7 @@ export default {
         </div>
         <DarkModeSwitcher/>
         <div>
-          <DownloadPdfButton pdf-file-name="MKatramez_CV.pdf" pdf-url="/MKatramez_CV.pdf"/>
+          <DownloadPdfButton :pdf-file-name=$constants.PDF_FILE_NAME :pdf-url=$constants.PDF_URL />
         </div>
       </div>
     </Transition>
