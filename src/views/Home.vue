@@ -14,7 +14,7 @@ export default {
     <div class="container mx-auto flex flex-col h-screen">
       <Navigation/>
       <transition appear :duration="550" name="fade">
-        <div class="flex-grow container lg:rounded-2xl px-12 py-12 bg-white dark:bg-[#111111] dark:text-white">
+        <div class="flex-grow container rounded-2xl px-12 py-12 bg-white dark:bg-[#111111] dark:text-white">
           <h1>Home</h1>
         </div>
       </transition>

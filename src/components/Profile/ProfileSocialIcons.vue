@@ -5,11 +5,11 @@ export default {
 </script>
 
 <template>
-  <div class="flex justify-between">
+  <div class="flex justify-between items-center justify-items-center">
     <!-- Discord -->
     <a :href=$constants.DISCORD_LINK>
       <svg
-          class="mr-2 cursor-pointer h-7 w-7"
+          class="mr-3 cursor-pointer h-7 w-7 hover:fill-sky-400"
           fill="currentColor"
           viewbox="0 0 24 24"
           style="color: #7289da"
@@ -25,7 +25,7 @@ export default {
     <a :href=$constants.GITHUB_LINK>
       <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="mr-2 cursor-pointer h-7 w-7"
+          class="mr-3 cursor-pointer h-7 w-7 hover:fill-gray-400"
           fill="currentColor"
           style="color: #333"
           viewBox="0 0 24 24">
@@ -38,7 +38,7 @@ export default {
     <a :href=$constants.FACEBOOK_LINK>
       <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="mr-2 cursor-pointer h-7 w-7"
+          class="mr-3 cursor-pointer h-7 w-7 hover:fill-blue-400"
           fill="currentColor"
           style="color: #1877f2"
           viewBox="0 0 24 24">
@@ -51,7 +51,7 @@ export default {
     <a :href=$constants.INSTEGRAM_LINK>
       <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="mr-2 cursor-pointer h-7 w-7"
+          class="mr-3 cursor-pointer h-7 w-7 hover:fill-pink-400"
           fill="currentColor"
           style="color: #c13584"
           viewBox="0 0 24 24">
@@ -64,7 +64,7 @@ export default {
     <a :href=$constants.LINKED_IN_LINK>
       <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="mr-2 cursor-pointer h-7 w-7"
+          class="mr-3 cursor-pointer h-7 w-7 hover:fill-sky-400"
           fill="currentColor"
           style="color: #0077b5"
           viewBox="0 0 24 24">
@@ -77,7 +77,7 @@ export default {
     <a :href=$constants.WHATS_APP_LINK>
       <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="h-7 w-7 cursor-pointer"
+          class="h-7 w-7 hover:fill-green-400 cursor-pointer"
           fill="currentColor"
           style="color: #128c7e"
           viewBox="0 0 24 24">
