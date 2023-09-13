@@ -18,9 +18,9 @@ export default {
 
     <p class="text-3xl mt-5 mb-5">My abilities </p>
       <div class="flex flex-wrap gap-5 justify-center">
-        <AboutCard card-title="Noteworthy technology acquisitions 2021" card-description="Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order."/>
-        <AboutCard card-title="Noteworthy technology acquisitions 2021" card-description="Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order."/>
-        <AboutCard card-title="Noteworthy technology acquisitions 2021" card-description="Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order."/>
+        <AboutCard card-url="/about" card-title="Noteworthy technology acquisitions 2021" card-description="Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order."/>
+        <AboutCard card-url="/about" card-title="Noteworthy technology acquisitions 2021" card-description="Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order."/>
+        <AboutCard card-url="/about" card-title="Noteworthy technology acquisitions 2021" card-description="Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order."/>
         <AboutCard card-title="Noteworthy technology acquisitions 2021" card-description="Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order."/>
       </div>
   </div>
