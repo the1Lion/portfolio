@@ -1,10 +1,11 @@
 <script>
 import Navigation from "../components/Navigation.vue";
 import Footer from "../components/Footer.vue";
+import HeroSection from "../components/Home/HeroSection.vue";
 
 export default {
   name: "Home",
-  components: {Footer, Navigation}
+  components: {HeroSection, Footer, Navigation}
 }
 </script>
 
@@ -15,7 +16,7 @@ export default {
       <Navigation/>
       <transition appear :duration="550" name="fade">
         <div class="flex-grow container rounded-2xl px-12 py-12 bg-white dark:bg-[#111111] dark:text-white">
-          <h1>Home</h1>
+          <HeroSection/>
         </div>
       </transition>
       <Footer/>
