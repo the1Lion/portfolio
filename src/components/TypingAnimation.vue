@@ -5,6 +5,10 @@ export default {
     text: {
       type: String,
       required: true
+    },
+    animationStyle: {
+      type: String,
+      required: true
     }
   }
 }
@@ -12,7 +16,7 @@ export default {
 
 <template>
     <div class="w-max">
-      <h1 class="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5 text-5xl text-black dark:text-white font-bold">{{text}}</h1>
+      <h1 :class='animationStyle + " overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5 text-5xl text-black dark:text-white font-bold"'>{{text}}</h1>
     </div>
 </template>
 

@@ -17,6 +17,15 @@ export default {
             width: "100%"
           }
         },
+        slowTyping: {
+          "0%": {
+            width: "0%",
+            visibility: "hidden"
+          },
+          "100%": {
+            width: "100%"
+          }
+        },
         blink: {
           "50%": {
             borderColor: "transparent"
@@ -27,7 +36,8 @@ export default {
         }
       },
       animation: {
-        typing: "typing 3s steps(20) infinite alternate, blink .7s infinite"
+        typing: "typing 3s steps(20) infinite alternate, blink .7s infinite",
+        slowTyping: "typing 6s steps(20) infinite alternate"
       }
     },
   },
