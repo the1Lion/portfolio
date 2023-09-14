@@ -33,11 +33,19 @@ export default {
           "100%": {
             borderColor: "white"
           }
+        },
+        slowBlink: {
+          "0%": {
+            borderColor: "transparent"
+          },
+          "100%": {
+            borderColor: "transparent"
+          }
         }
       },
       animation: {
         typing: "typing 3s steps(20) infinite alternate, blink .7s infinite",
-        slowTyping: "typing 6s steps(20) infinite alternate"
+        slowTyping: "typing 3s steps(30), slowBlink .1s infinite"
       }
     },
   },
