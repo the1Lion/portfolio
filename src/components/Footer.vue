@@ -6,8 +6,8 @@ export default {
 
 <template>
   <!-- This is an example component -->
-    <footer class="text-white p-4 rounded-lg md:flex md:items-center md:justify-between md:p-6 ">
-		<span class="text-sm sm:text-center">© 2023 <a href="/" class="hover:underline" target="_blank">Mohamad Katramez™</a>. All Rights Reserved.
+    <footer class="text-black dark:text-white p-4 rounded-lg md:flex md:items-center md:justify-between md:p-6 ">
+		<span class="text-sm sm:text-center">© 2023 <a href="/" class="hover:underline" target="_blank">{{ $constants.USER_NAME}}™</a>. All Rights Reserved.
     </span>
       <ul class="flex flex-wrap items-center mt-3 sm:mt-0">
         <li>
