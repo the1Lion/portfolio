@@ -1,14 +1,51 @@
 <script>
 import ContactIcons from "./ContactIcons.vue";
+import {Email} from "../../assets/smtp/smtp.js";
 
 export default {
   name: "ContantForm",
-  components: {ContactIcons}
+  components: {ContactIcons},
+  data() {
+    return {
+      name: '',
+      email: '',
+      subject: ' wants to contact with you',
+      message: '',
+    }
+  },
+  methods: {
+    send(){
+      if (this.email && this.message && this.name){
+        this.sendEmail()
+      }else{
+        alert('please fulfill all form field')
+      }
+    },
+    resetForm() {
+      this.name = ''
+      this.email = ''
+      this.message = ''
+    },
+    sendEmail() {
+      Email.send({
+        SecureToken: this.$constants.SMTP_SECURE_TOKEN,
+        To: this.$constants.USER_EMAIL,
+        From: this.$constants.SMTP_EMAIL,
+        name: this.name,
+        Subject: this.email + this.subject,
+        Body: this.message,
+      }).then(
+          message => {
+            this.resetForm()
+          }
+      );
+    }
+  }
 }
 </script>
 
 <template>
-  <form class="p-6 flex flex-col justify-center">
+  <form action="" class="p-6 flex flex-col justify-center">
     <!-- component -->
     <div class="relative py-3 sm:max-w-5xl sm:mx-auto">
       <div
@@ -39,7 +76,7 @@ export default {
             <div class="divide-y divide-gray-200">
               <div class="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
                 <div class="relative">
-                  <input autocomplete="off" id="name" name="name" type="text"
+                  <input autocomplete="off" v-model="name" id="name" name="name" type="text"
                          class="peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600"
                          placeholder="Name"/>
                   <label for="name"
@@ -47,7 +84,7 @@ export default {
                     Name</label>
                 </div>
                 <div class="relative">
-                  <input autocomplete="off" id="email" name="email" type="text"
+                  <input autocomplete="off" v-model="email" id="email" name="email" type="text"
                          class="peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600"
                          placeholder="Email"/>
                   <label for="email"
@@ -55,7 +92,7 @@ export default {
                     Email</label>
                 </div>
                 <div class="relative">
-                      <textarea autocomplete="off" id="message" name="message" type="textarea"
+                      <textarea autocomplete="off" v-model="message" id="message" name="message" type="textarea"
                                 class="peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600"
                                 placeholder="Message"/>
                   <label for="message"
@@ -64,6 +101,8 @@ export default {
                 </div>
                 <div class="relative">
                   <button
+                      @click="send"
+                      type="submit"
                       class="bg-gradient-to-r from-cyan-500 to-blue-600 dark:bg-gradient-to-r dark:from-violet-600 dark:to-fuchsia-700 text-white rounded-md px-2 py-1">
                     Submit
                   </button>

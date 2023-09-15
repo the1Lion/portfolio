@@ -1,4 +1,7 @@
 export const SITE_URL = 'https://the1lion.github.io/portfolio/';
+export const SMTP_SECURE_TOKEN = '77e937c1-7226-4903-920c-bbb8646880e4';
+export const SMTP_EMAIL = 'mo.katramez.schubwerk@gmail.com';
+export const SMTP_PASSWORD = 'E1182F134744ABF2AB8FFEA08781C182E5E7';
 
 // Profile icons links
 export const DISCORD_LINK = '/'

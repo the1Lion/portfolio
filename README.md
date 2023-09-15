@@ -20,3 +20,11 @@ git commit -m "create new gh-pages branch"
 ```shell
 git subtree push --prefix dist origin gh-pages
 ```
+
+
+
+Configure the smtp for contact: 
+
+1- you need to create an account with https://app.elasticemail.com/api/logs/email
+2- go to https://smtpjs.com/ and generate your security token and then
+write it in constants 
