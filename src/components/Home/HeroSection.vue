@@ -20,10 +20,10 @@ export default {
     <div class="absolute inset-0 bg-black bg-opacity-50"></div>
     <div class="absolute inset-0 flex flex-col items-center justify-center">
       <h1 class="text-4xl text-white font-bold">
-        <TypingAnimation :animation-style="'animate-typing'" :text="'I`m ' + $constants.USER_NAME"/>
+        <TypingAnimation class="font-mono" :animation-style="'animate-typing'" :text="'I`m ' + $constants.USER_NAME"/>
       </h1>
       <p class="text-xl text-white mt-4">
-        <TypingAnimation animation-style="animate-slowTyping" text="Welcome to my page"/>
+        <TypingAnimation class="font-mono" animation-style="animate-slowTyping" text="Welcome to my page"/>
       </p>
       <div class="mt-10 flex items-center justify-center gap-x-6">
         <a href="/about"

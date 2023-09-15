@@ -1,6 +1,6 @@
 export const SITE_URL = 'https://the1lion.github.io/portfolio/';
 
-// Profile icons
+// Profile icons links
 export const DISCORD_LINK = '/'
 export const FACEBOOK_LINK = '/'
 export const INSTEGRAM_LINK = '/'

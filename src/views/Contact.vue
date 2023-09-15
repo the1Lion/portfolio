@@ -1,10 +1,11 @@
 <script>
 import Navigation from "../components/Navigation.vue";
 import Footer from "../components/Footer.vue";
+import ContactModule from "../components/Contact/ContactModule.vue";
 
 export default {
   name: "Contact",
-  components: {Footer, Navigation}
+  components: {ContactModule, Footer, Navigation}
 }
 </script>
 
@@ -14,8 +15,8 @@ export default {
     <div class="container mx-auto flex flex-col h-screen">
       <Navigation/>
       <transition appear :duration="550" name="fade">
-      <div class="flex-grow container rounded-2xl px-12 py-12 bg-white dark:bg-[#111111] dark:text-white">
-        <h1>Contact</h1>
+      <div class="flex-grow px-12 py-12">
+        <ContactModule/>
       </div>
       </transition>
       <Footer/>
