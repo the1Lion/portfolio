@@ -1,4 +1,8 @@
 # Mo Portfolio
+### Install
+```shell
+npm install
+```
 
 ## To push the branch into github for deploying
 1. On remote repository delete the "gh-pages" branch.
