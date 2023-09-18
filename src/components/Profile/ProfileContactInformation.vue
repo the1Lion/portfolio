@@ -5,10 +5,28 @@ export default {
 </script>
 
 <template>
-  <div class="p-7 rounded-2xl mt-5 bg-blue-200 dark:bg-[#1D1D1D]">
+  <div class="p-7 rounded-2xl mt-5 bg-blue-200 dark:bg-[#1D1D1D] w-max">
+    <div class="flex py-2.5 border-b border-[#E3E3E3] dark:border-[#3D3A3A]"><span
+        class="flex-shrink-0 text-[#FD7590]">
+      <svg stroke="currentColor"
+           fill="currentColor"
+           stroke-width="0"
+           viewBox="0 0 512 512"
+           height="1em" width="1em"
+           xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path
+          d="M16.1 260.2c-22.6 12.9-20.5 47.3 3.6 57.3L160 376V479.3c0 18.1 14.6 32.7 32.7 32.7c9.7 0 18.9-4.3 25.1-11.8l62-74.3 123.9 51.6c18.9 7.9 40.8-4.5 43.9-24.7l64-416c1.9-12.1-3.4-24.3-13.5-31.2s-23.3-7.5-34-1.4l-448 256zm52.1 25.5L409.7 90.6 190.1 336l1.2 1L68.2 285.7zM403.3 425.4L236.7 355.9 450.8 116.6 403.3 425.4z"/></svg>
+    </span>
+      <div class="text-left ml-2.5"><p class="text-xs text-[#44566C] dark:text-[#A6A6A6]">Email Address</p>
+        <p class="dark:text-white break-all"><a class="hover:text-[#FA5252] duration-300 transition"
+                                                :href="'mailto:' + $constants.USER_EMAIL">{{
+            $constants.USER_EMAIL
+          }}</a>
+        </p></div>
+    </div>
     <div class="flex py-2 border-b border-[#E3E3E3] dark:border-[#3D3A3A]">
         <span
             class="flex-shrink-0 text-[#E93B81]">
+
         <svg stroke="currentColor"
              fill="currentColor"
              stroke-width="0"
@@ -16,7 +34,7 @@ export default {
              height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path
             d="M16 64C16 28.7 44.7 0 80 0H304c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H80c-35.3 0-64-28.7-64-64V64zM224 448a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM304 64H80V384H304V64z"/></svg>
       </span>
-      <div class="text-left ml-2.5"><p class="text-xs text-[#44566C] dark:text-[#A6A6A6]">Phone</p>
+      <div class="text-left ml-2.5"><p class="text-xs text-[#44566C] dark:text-[#A6A6A6]">Phone Number</p>
         <p class="dark:text-white break-all"><a class="hover:text-[#FA5252] duration-300 transition"
                                                 :href="'tel:' + $constants.PHONE_NUMBER">{{
             $constants.PHONE_NUMBER
@@ -38,28 +56,18 @@ export default {
             $constants.USER_COUNTRY
           }}</p></div>
     </div>
-    <div class="flex py-2.5 border-b border-[#E3E3E3] dark:border-[#3D3A3A]"><span
-        class="flex-shrink-0 text-[#FD7590]"><svg stroke="currentColor"
-                                                  fill="currentColor"
-                                                  stroke-width="0"
-                                                  viewBox="0 0 512 512"
-                                                  height="1em" width="1em"
-                                                  xmlns="http://www.w3.org/2000/svg"><path
-        d="M176 216h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16zm-16 80c0 8.84 7.16 16 16 16h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16zm96 121.13c-16.42 0-32.84-5.06-46.86-15.19L0 250.86V464c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V250.86L302.86 401.94c-14.02 10.12-30.44 15.19-46.86 15.19zm237.61-254.18c-8.85-6.94-17.24-13.47-29.61-22.81V96c0-26.51-21.49-48-48-48h-77.55c-3.04-2.2-5.87-4.26-9.04-6.56C312.6 29.17 279.2-.35 256 0c-23.2-.35-56.59 29.17-73.41 41.44-3.17 2.3-6 4.36-9.04 6.56H96c-26.51 0-48 21.49-48 48v44.14c-12.37 9.33-20.76 15.87-29.61 22.81A47.995 47.995 0 0 0 0 200.72v10.65l96 69.35V96h320v184.72l96-69.35v-10.65c0-14.74-6.78-28.67-18.39-37.77z"></path></svg></span>
-      <div class="text-left ml-2.5"><p class="text-xs text-[#44566C] dark:text-[#A6A6A6]">Email</p>
-        <p class="dark:text-white break-all"><a class="hover:text-[#FA5252] duration-300 transition"
-                                                :href="'mailto:' + $constants.USER_EMAIL">{{$constants.USER_EMAIL}}</a></p></div>
-    </div>
     <div class="flex py-2.5 undefined"><span
-        class="flex-shrink-0 text-[#C17CEB]"><svg stroke="currentColor"
-                                                  fill="currentColor"
-                                                  stroke-width="0"
-                                                  viewBox="0 0 448 512"
-                                                  height="1em" width="1em"
-                                                  xmlns="http://www.w3.org/2000/svg"><path
-        d="M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm320-196c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM192 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM64 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z"></path></svg></span>
+        class="flex-shrink-0 text-[#C17CEB]">
+      <svg stroke="currentColor"
+           fill="currentColor"
+           stroke-width="0"
+           viewBox="0 0 448 512"
+           height="1em" width="1em"
+           xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path
+          d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192H400V448c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192z"/></svg>
+      </span>
       <div class="text-left ml-2.5"><p class="text-xs text-[#44566C] dark:text-[#A6A6A6]">Birthday</p>
-        <p class="dark:text-white break-all">{{$constants.USER_BIRTH_DAY}}</p></div>
+        <p class="dark:text-white break-all">{{ $constants.USER_BIRTH_DAY }}</p></div>
     </div>
   </div>
 </template>
