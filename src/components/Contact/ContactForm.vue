@@ -3,13 +3,13 @@ import ContactIcons from "./ContactIcons.vue";
 import {Email} from "../../assets/smtp/smtp.js";
 
 export default {
-  name: "ContantForm",
+  name: "ContactForm",
   components: {ContactIcons},
   data() {
     return {
       name: '',
       email: '',
-      subject: ' wants to contact with you',
+      subject: '',
       message: '',
     }
   },
@@ -32,7 +32,7 @@ export default {
         To: this.$constants.USER_EMAIL,
         From: this.$constants.SMTP_EMAIL,
         name: this.name,
-        Subject: this.email + this.subject,
+        Subject: this.email + ' ' + this.$constants.SMTP_EMAIL_SUBJECT,
         Body: this.message,
       }).then(
           message => {

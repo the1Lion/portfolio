@@ -1,14 +1,14 @@
 <script>
-import ContantForm from "./ContantForm.vue";
+import ContactForm from "./ContactForm.vue";
 
 export default {
   name: "ContactModule",
-  components: {ContantForm}
+  components: {ContactForm}
 }
 </script>
 
 <template>
-      <ContantForm/>
+      <ContactForm/>
 </template>
 
 <style scoped>
