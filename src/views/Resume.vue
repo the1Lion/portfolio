@@ -1,10 +1,12 @@
 <script>
 import Navigation from "../components/Navigation.vue";
 import Footer from "../components/Footer.vue";
+import AboutCard from "../components/About/AboutCard.vue";
+import ProgressBar from "../components/ProgressBars/ProgressBar.vue";
 
 export default {
   name: "Resume",
-  components: {Footer, Navigation}
+  components: {ProgressBar, AboutCard, Footer, Navigation}
 }
 </script>
 
@@ -14,9 +16,27 @@ export default {
     <div class="container mx-auto flex flex-col h-screen">
       <Navigation/>
       <transition appear :duration="550" name="fade">
-      <div class="flex-grow container rounded-2xl px-12 py-12 bg-white dark:bg-[#111111] dark:text-white">
-        <h1>Resume</h1>
-      </div>
+        <div class="flex-grow container rounded-2xl px-12 py-12 bg-white dark:bg-[#111111] dark:text-white">
+
+          <div class="flex gap-12 flex-wrap">
+            <AboutCard card-url="/about" card-title="Noteworthy technology acquisitions 2021"
+                       card-description="Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.">
+              <ProgressBar progress-percentage="5"></ProgressBar>
+            </AboutCard>
+            <AboutCard card-url="/about" card-title="Noteworthy technology acquisitions 2021"
+                       card-description="Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.">
+
+            </AboutCard>
+            <AboutCard card-url="/about" card-title="Noteworthy technology acquisitions 2021"
+                       card-description="Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.">
+
+            </AboutCard>
+            <AboutCard card-url="/about" card-title="Noteworthy technology acquisitions 2021"
+                       card-description="Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.">
+
+            </AboutCard>
+          </div>
+        </div>
       </transition>
       <Footer/>
     </div>
