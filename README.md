@@ -11,7 +11,7 @@
 1. create an account with https://app.elasticemail.com/api/logs/email
 2. go to https://smtpjs.com/ and generate your security token using the email
 from https://app.elasticemail.com/ then write it in constants 
-3. in the https://app.elasticemail.com/ go to Start/Verify Domain/Verify Email and verify your USER_EMAIL
+3. in the https://app.elasticemail.com/ go to Start/Verify Domain/Verify Email and verify your USER_EMAIL and SMTP_EMAIL
 
 ## 3- Deploying using GitHub pages push the branch like this:
 1. on remote repository delete the "gh-pages" branch if existed.
