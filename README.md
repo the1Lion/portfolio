@@ -1,3 +1,6 @@
+# <p style="text-align: center;">بِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيم ِ</p>
+<br/>
+
 # CV Art 
 ### A website for crafting modern CVs
 <hr/>
