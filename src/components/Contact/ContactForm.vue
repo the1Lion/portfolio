@@ -14,17 +14,10 @@ export default {
     }
   },
   methods: {
-    send(){
-      if (this.email && this.message && this.name){
+    send() {
+      if (this.email && this.message && this.name) {
         this.sendEmail()
-      }else{
-        alert('please fulfill all form field')
       }
-    },
-    resetForm() {
-      this.name = ''
-      this.email = ''
-      this.message = ''
     },
     sendEmail() {
       Email.send({
@@ -34,11 +27,7 @@ export default {
         name: this.name,
         Subject: this.email + ' ' + this.$constants.SMTP_EMAIL_SUBJECT,
         Body: this.message,
-      }).then(
-          message => {
-            this.resetForm()
-          }
-      );
+      })
     }
   }
 }
@@ -78,15 +67,15 @@ export default {
                 <div class="relative">
                   <input autocomplete="off" v-model="name" id="name" name="name" type="text"
                          class="peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600"
-                         placeholder="Name"/>
+                         placeholder="Name" required/>
                   <label for="name"
                          class="absolute left-0 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm">Your
                     Name</label>
                 </div>
                 <div class="relative">
-                  <input autocomplete="off" v-model="email" id="email" name="email" type="text"
+                  <input autocomplete="off" v-model="email" id="email" name="email" type="email"
                          class="peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600"
-                         placeholder="Email"/>
+                         placeholder="Email" required/>
                   <label for="email"
                          class="absolute left-0 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm">Your
                     Email</label>
@@ -94,7 +83,7 @@ export default {
                 <div class="relative">
                       <textarea autocomplete="off" v-model="message" id="message" name="message" type="textarea"
                                 class="peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600"
-                                placeholder="Message"/>
+                                placeholder="Message" required/>
                   <label for="message"
                          class="absolute left-0 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm">
                     Message</label>
