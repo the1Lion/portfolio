@@ -16,7 +16,7 @@ export default {
       <slot name="image"></slot>
       <h5 class="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{ title }}</h5>
     </div>
-      <p class="mb-2 font-normal text-gray-700 dark:text-gray-400">{{ description }}</p>
+      <p class="font-normal text-gray-700 dark:text-gray-400">{{ description }}</p>
       <slot/>
   </a>
 </template>

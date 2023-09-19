@@ -16,22 +16,19 @@ export default {
       type: String,
       default: 'bg-gray-300'
     },
-    darkBackgroundColor: {
-      required: false,
-      type: String,
-      default: 'bg-gray-700'
-    }
   }
 }
 </script>
 
 <template>
-  <slot name="header"/>
-  <div class="w-full rounded-full h-2 " :class="'dark:'+ darkBackgroundColor + ' ' + backgroundColor">
-    <div class=" h-2 rounded-full" :class="color" :style="'width: ' +  progressPercentage + '%'">
-      <span class="text-xs relative" :style="'left: ' +  (parseInt(progressPercentage) >= 90 ? '90' : progressPercentage ) + '%'">
+  <div>
+    <slot name="header"/>
+    <div class="w-full rounded-full h-3 dark:bg-neutral-500" :class="backgroundColor">
+      <div class=" h-3 rounded-full" :class="color" :style="'width: ' +  progressPercentage + '%'">
+      <span class="text-xs relative top-[-0.43rem]" :style="'left: ' +  (parseInt(progressPercentage) >= 90 ? '90' : progressPercentage ) + '%'">
         {{ progressPercentage }}%
       </span>
+      </div>
     </div>
   </div>
 </template>

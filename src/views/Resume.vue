@@ -27,28 +27,13 @@ export default {
                 <img class="w-12 h-12" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/512px-Vue.js_Logo_2.svg.png" alt="">
               </template>
 
-              <ProgressBar progress-percentage="100" color="bg-red-400" background-color="bg-black" dark-background-color="bg-white">
+              <ProgressBar class="mt-5 mb-5" progress-percentage="20" color="bg-sky-500" background-color="bg-red-300">
                 <template v-slot:header>
                   <span>text</span>
                 </template>
               </ProgressBar>
             </Card>
-            <AboutCard card-url="/about" card-title="Noteworthy technology acquisitions 2021"
-                       card-description="Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.">
-              <ProgressBar progress-percentage="45" color="bg-red-400" background-color="bg-black" dark-background-color="bg-white"></ProgressBar>
-            </AboutCard>
-            <AboutCard card-url="/about" card-title="Noteworthy technology acquisitions 2021"
-                       card-description="Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.">
 
-            </AboutCard>
-            <AboutCard card-url="/about" card-title="Noteworthy technology acquisitions 2021"
-                       card-description="Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.">
-
-            </AboutCard>
-            <AboutCard card-url="/about" card-title="Noteworthy technology acquisitions 2021"
-                       card-description="Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.">
-
-            </AboutCard>
           </div>
         </div>
       </transition>
