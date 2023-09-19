@@ -26,8 +26,13 @@ export default {
 </script>
 
 <template>
-  <div class="w-full rounded-full h-2.5 " :class="'dark:'+ darkBackgroundColor + ' ' + backgroundColor">
-    <div class=" h-2.5 rounded-full" :class="color" :style="'width: ' +  progressPercentage + '%'"></div>
+  <slot name="header"/>
+  <div class="w-full rounded-full h-2 " :class="'dark:'+ darkBackgroundColor + ' ' + backgroundColor">
+    <div class=" h-2 rounded-full" :class="color" :style="'width: ' +  progressPercentage + '%'">
+      <span class="text-xs relative" :style="'left: ' +  (parseInt(progressPercentage) >= 90 ? '90' : progressPercentage ) + '%'">
+        {{ progressPercentage }}%
+      </span>
+    </div>
   </div>
 </template>
 
