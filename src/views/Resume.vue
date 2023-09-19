@@ -21,7 +21,7 @@ export default {
           <div class="flex gap-12 flex-wrap">
             <AboutCard card-url="/about" card-title="Noteworthy technology acquisitions 2021"
                        card-description="Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.">
-              <ProgressBar progress-percentage="5"></ProgressBar>
+              <ProgressBar progress-percentage="45" color="bg-red-400" background-color="bg-black" dark-background-color="bg-white"></ProgressBar>
             </AboutCard>
             <AboutCard card-url="/about" card-title="Noteworthy technology acquisitions 2021"
                        card-description="Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.">

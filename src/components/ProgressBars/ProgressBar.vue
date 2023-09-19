@@ -26,8 +26,8 @@ export default {
 </script>
 
 <template>
-  <div :class="'w-full ' + backgroundColor +' rounded-full h-2.5 dark:' + darkBackgroundColor">
-    <div :class="color + ' h-2.5 rounded-full'" :style="'width: ' +  progressPercentage + '%'"></div>
+  <div class="w-full rounded-full h-2.5 " :class="'dark:'+ darkBackgroundColor + ' ' + backgroundColor">
+    <div class=" h-2.5 rounded-full" :class="color" :style="'width: ' +  progressPercentage + '%'"></div>
   </div>
 </template>
 
