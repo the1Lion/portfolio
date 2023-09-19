@@ -3,10 +3,11 @@ import Navigation from "../components/Navigation.vue";
 import Footer from "../components/Footer.vue";
 import AboutCard from "../components/About/AboutCard.vue";
 import ProgressBar from "../components/ProgressBars/ProgressBar.vue";
+import Card from "../components/Card.vue";
 
 export default {
   name: "Resume",
-  components: {ProgressBar, AboutCard, Footer, Navigation}
+  components: {Card, ProgressBar, AboutCard, Footer, Navigation}
 }
 </script>
 
@@ -19,6 +20,9 @@ export default {
         <div class="flex-grow container rounded-2xl px-12 py-12 bg-white dark:bg-[#111111] dark:text-white">
 
           <div class="flex gap-12 flex-wrap">
+            <Card title="Noteworthy technology acquisitions 2021" description="Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.">
+              <ProgressBar class="mt-5" progress-percentage="45" color="bg-red-400" background-color="bg-black" dark-background-color="bg-white"></ProgressBar>
+            </Card>
             <AboutCard card-url="/about" card-title="Noteworthy technology acquisitions 2021"
                        card-description="Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.">
               <ProgressBar progress-percentage="45" color="bg-red-400" background-color="bg-black" dark-background-color="bg-white"></ProgressBar>
