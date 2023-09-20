@@ -1,10 +1,11 @@
 <script>
 import Navigation from "../components/Navigation.vue";
 import Footer from "../components/Footer.vue";
+import ImageSlider from "../components/Carousel/ImageSlider.vue";
 
 export default {
   name: "Works",
-  components: {Footer, Navigation}
+  components: {ImageSlider, Footer, Navigation}
 }
 </script>
 
@@ -18,6 +19,8 @@ export default {
           <h1>Works</h1>
         </div>
       </transition>
+      <ImageSlider/>
+
       <Footer/>
     </div>
   </div>
