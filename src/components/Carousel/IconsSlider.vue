@@ -25,21 +25,23 @@ export default {
       breakpoints: {
         // 700px and up
         700: {
-          itemsToShow: this.slides.length,
+          itemsToShow: 3,
           snapAlign: 'center',
         },
         // 1024 and up
         1024: {
-          itemsToShow: this.slides.length,
+          itemsToShow: 5,
           snapAlign: 'start',
         },
       },
       slides: [
-        'https://images.unsplash.com/photo-1513735539099-cf6e5d559d82?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1972&q=80',
-        'https://images.unsplash.com/photo-1509225770129-fbcf8a696c0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2272&q=80',
-        'https://images.unsplash.com/photo-1601236414929-677713b2d078?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2190&q=80',
-        'https://images.unsplash.com/photo-1501082183835-b7b33db89c3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2320&q=80',
-        'https://images.unsplash.com/photo-1583004313509-086a16d5e415?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2027&q=80',
+        'CV.svg',
+        'CV.svg',
+        'CV.svg',
+        'CV.svg',
+        'CV.svg',
+        'CV.svg',
+        'CV.svg',
       ]
     }
   }
@@ -47,14 +49,15 @@ export default {
 </script>
 
 <template>
-  <Carousel v-bind="settings" :breakpoints="breakpoints" :autoplay="3000" :wrap-around="true" :transition="1000">
+  <Carousel v-bind="settings" :breakpoints="breakpoints" :autoplay="1000" :wrap-around="true" :transition="1000">
     <Slide v-for="slide in slides" :key="slide">
-      <img class="rounded-xl" :src="slide" alt="slider_image">
+      <img class="w-24 h-24" :src="slide" alt="icon"/>
+
     </Slide>
-    <template #addons>
-      <Navigation/>
-      <Pagination/>
-    </template>
+<!--    <template #addons>-->
+<!--      <Navigation/>-->
+<!--      <Pagination/>-->
+<!--    </template>-->
   </Carousel>
 </template>
 
