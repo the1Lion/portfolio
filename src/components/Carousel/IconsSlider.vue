@@ -12,7 +12,10 @@ export default {
     Navigation,
   },
   props: {
-    slides: []
+    slides: {
+      required: true,
+      type: Array
+    }
   },
   data() {
     return {
@@ -35,13 +38,9 @@ export default {
         },
       },
       slides: [
-        'CV.svg',
-        'CV.svg',
-        'CV.svg',
-        'CV.svg',
-        'CV.svg',
-        'CV.svg',
-        'CV.svg',
+          'icons/tailwindcss.svg',
+          'icons/laravel.svg',
+          'icons/vueJs.svg',
       ]
     }
   }
@@ -54,10 +53,10 @@ export default {
       <img class="w-24 h-24" :src="slide" alt="icon"/>
 
     </Slide>
-<!--    <template #addons>-->
-<!--      <Navigation/>-->
-<!--      <Pagination/>-->
-<!--    </template>-->
+    <!--    <template #addons>-->
+    <!--      <Navigation/>-->
+    <!--      <Pagination/>-->
+    <!--    </template>-->
   </Carousel>
 </template>
 

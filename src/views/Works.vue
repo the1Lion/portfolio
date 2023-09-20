@@ -6,7 +6,7 @@ import IconsSlider from "../components/Carousel/IconsSlider.vue";
 
 export default {
   name: "Works",
-  components: {IconsSlider, ImageSlider, Footer, Navigation}
+  components: {IconsSlider, ImageSlider, Footer, Navigation},
 }
 </script>
 
@@ -20,7 +20,7 @@ export default {
           <h1>Works</h1>
         </div>
       </transition>
-      <IconsSlider></IconsSlider>
+      <IconsSlider/>
       <ImageSlider/>
 
       <Footer/>
