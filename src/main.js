@@ -4,9 +4,6 @@ import App from './App.vue'
 import router from "./router";
 import * as constants from './helpers/constants.js';
 
-
-const app = createApp(App)
-
 const defineConstants = {
     install(app) {
         // when we use $ we can then call the constants
@@ -17,6 +14,8 @@ const defineConstants = {
         });
     },
 }
+
+const app = createApp(App)
 
 app.use(router)
 app.use(defineConstants)
