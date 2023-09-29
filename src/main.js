@@ -6,12 +6,18 @@ import * as constants from './helpers/constants.js';
 
 
 const app = createApp(App)
-// when we use $ we can then call the constants
-Object.defineProperties(app.config.globalProperties, {
-    $constants: {
-        value: constants,
-    }
-});
+
+const defineConstants = {
+    install(app) {
+        // when we use $ we can then call the constants
+        Object.defineProperties(app.config.globalProperties, {
+            $constants: {
+                value: constants,
+            }
+        });
+    },
+}
+
 app.use(router)
-app.use(constants)
+app.use(defineConstants)
 app.mount('#app');
